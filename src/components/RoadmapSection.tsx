@@ -132,7 +132,7 @@ const RoadmapSection = () => {
   return (
     <motion.section
       ref={ref}
-      id="roadmap"
+      id="vision"
       className="py-20 bg-gradient-to-b from-background via-muted/30 to-background relative overflow-hidden"
       initial="hidden"
       animate={isInView ? "visible" : "hidden"}
