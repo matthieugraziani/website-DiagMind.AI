@@ -53,7 +53,7 @@ const Header = () => {
               <a href="/auth">Connexion</a>
             </Button>
             <Button variant="medical" size="sm" asChild>
-              <a href="/auth">Démo Gratuite</a>
+              <a href="https://calendly.com/matthieu-graziani007" target="_blank" rel="noopener noreferrer">Réserver une Démo</a>
             </Button>
           </div>
 
@@ -96,7 +96,7 @@ const Header = () => {
                   <a href="/auth">Connexion</a>
                 </Button>
                 <Button variant="medical" size="sm" asChild>
-                  <a href="/auth">Démo Gratuite</a>
+                  <a href="https://calendly.com/matthieu-graziani007" target="_blank" rel="noopener noreferrer">Réserver une Démo</a>
                 </Button>
               </div>
             </nav>

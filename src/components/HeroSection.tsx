@@ -1,13 +1,11 @@
-import { useNavigate } from 'react-router-dom';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Brain, Zap, Shield, TrendingUp } from "lucide-react";
+import { Calendar, Zap, Shield, TrendingUp } from "lucide-react";
 import heroImage from "@/assets/hero-brain-scan.jpg";
 
 const HeroSection = () => {
-  const navigate = useNavigate();
   const sectionRef = useRef<HTMLElement>(null);
   
   // Parallax effect for the hero image
@@ -122,10 +120,12 @@ const HeroSection = () => {
                 variant="medical" 
                 size="lg" 
                 className="shadow-hero"
-                onClick={() => navigate('/detection-demo')}
+                asChild
               >
-                <Brain className="h-5 w-5" />
-                Essayer la Démo
+                <a href="https://calendly.com/matthieu-graziani007" target="_blank" rel="noopener noreferrer">
+                  <Calendar className="h-5 w-5" />
+                  Réserver une Démo
+                </a>
               </Button>
               <Button 
                 variant="medical-outline" 
