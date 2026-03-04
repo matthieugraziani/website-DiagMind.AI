@@ -35,15 +35,14 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* À Propos */}
+          {/* Navigation */}
           <div className="space-y-4">
-            <h4 className="font-semibold text-background">À Propos</h4>
+            <h4 className="font-semibold text-background">Navigation</h4>
             <ul className="space-y-2 text-sm text-background/70">
-              <li><a href="/about" className="hover:text-background transition-colors">Notre Équipe</a></li>
-              <li><a href="/about#research" className="hover:text-background transition-colors">Recherche & Développement</a></li>
-              <li><a href="/about#milestones" className="hover:text-background transition-colors">Notre Parcours</a></li>
-              <li><a href="/about#partners" className="hover:text-background transition-colors">Partenaires</a></li>
-              <li><a href="/carrieres" className="hover:text-background transition-colors">Carrières</a></li>
+              <li><a href="/#fonctionnement" className="hover:text-background transition-colors">Fonctionnement</a></li>
+              <li><a href="/#avantages" className="hover:text-background transition-colors">Avantages</a></li>
+              <li><a href="/#vision" className="hover:text-background transition-colors">Vision</a></li>
+              <li><a href="/#contact" className="hover:text-background transition-colors">Contact</a></li>
             </ul>
           </div>
 
@@ -53,11 +52,11 @@ const Footer = () => {
             <div className="space-y-3 text-sm text-background/70">
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4" />
-                <span>contact@diagmind.ai</span>
+                <span>matthieu.graziani007@gmail.com</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Linkedin className="h-4 w-4" />
-                <a href="#" className="hover:text-background transition-colors">LinkedIn Fondateur</a>
+                <a href="https://www.linkedin.com/in/matthieu-graziani-4190b526b" target="_blank" rel="noopener noreferrer" className="hover:text-background transition-colors">LinkedIn Fondateur</a>
               </div>
               <div className="flex items-center space-x-2">
                 <Twitter className="h-4 w-4" />

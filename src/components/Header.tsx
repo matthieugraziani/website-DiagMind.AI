@@ -36,12 +36,6 @@ const Header = () => {
             <a href="/#vision" className="text-foreground hover:text-primary transition-colors">
               Vision
             </a>
-            <a href="/about" className="text-foreground hover:text-primary transition-colors">
-              À Propos
-            </a>
-            <a href="/faq" className="text-foreground hover:text-primary transition-colors">
-              FAQ
-            </a>
             <a href="/#contact" className="text-foreground hover:text-primary transition-colors">
               Contact
             </a>
@@ -49,11 +43,8 @@ const Header = () => {
 
           {/* CTA Button */}
           <div className="hidden md:flex items-center space-x-4">
-            <Button variant="medical-outline" size="sm" asChild>
-              <a href="/auth">Connexion</a>
-            </Button>
             <Button variant="medical" size="sm" asChild>
-              <a href="/auth">Démo Gratuite</a>
+              <a href="https://calendly.com/matthieu-graziani007" target="_blank" rel="noopener noreferrer">Réserver une Démo</a>
             </Button>
           </div>
 
@@ -82,21 +73,12 @@ const Header = () => {
               <a href="/#vision" className="text-foreground hover:text-primary transition-colors">
                 Vision
               </a>
-              <a href="/about" className="text-foreground hover:text-primary transition-colors">
-                À Propos
-              </a>
-              <a href="/faq" className="text-foreground hover:text-primary transition-colors">
-                FAQ
-              </a>
               <a href="/#contact" className="text-foreground hover:text-primary transition-colors">
                 Contact
               </a>
               <div className="flex flex-col space-y-2 pt-4">
-                <Button variant="medical-outline" size="sm" asChild>
-                  <a href="/auth">Connexion</a>
-                </Button>
                 <Button variant="medical" size="sm" asChild>
-                  <a href="/auth">Démo Gratuite</a>
+                  <a href="https://calendly.com/matthieu-graziani007" target="_blank" rel="noopener noreferrer">Réserver une Démo</a>
                 </Button>
               </div>
             </nav>

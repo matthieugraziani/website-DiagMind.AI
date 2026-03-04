@@ -10,7 +10,8 @@ import {
   CheckCircle2, 
   Clock,
   Target,
-  Flag
+  Flag,
+  Calendar
 } from "lucide-react";
 
 const RoadmapSection = () => {
@@ -132,7 +133,7 @@ const RoadmapSection = () => {
   return (
     <motion.section
       ref={ref}
-      id="roadmap"
+      id="vision"
       className="py-20 bg-gradient-to-b from-background via-muted/30 to-background relative overflow-hidden"
       initial="hidden"
       animate={isInView ? "visible" : "hidden"}
@@ -268,15 +269,18 @@ const RoadmapSection = () => {
 
         {/* CTA */}
         <motion.div 
-          className="text-center mt-12"
+          className="text-center mt-12 space-y-4"
           variants={headerVariants}
         >
-          <a 
-            href="/about" 
-            className="inline-flex items-center gap-2 text-primary hover:text-primary/80 font-medium transition-colors"
+          <p className="text-lg text-muted-foreground">Envie de faire partie de cette aventure ?</p>
+          <a
+            href="https://calendly.com/matthieu-graziani007"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-8 py-3 rounded-lg bg-gradient-hero text-primary-foreground font-semibold hover:opacity-90 transition-opacity shadow-hero"
           >
-            Voir le parcours détaillé sur notre page À Propos
-            <Rocket className="w-4 h-4" />
+            <Calendar className="h-5 w-5" />
+            Planifier un Échange
           </a>
         </motion.div>
       </div>

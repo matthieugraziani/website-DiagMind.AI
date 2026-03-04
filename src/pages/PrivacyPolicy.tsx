@@ -3,8 +3,7 @@ import Footer from "@/components/Footer";
 import Watermark from "@/components/Watermark";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Shield, Database, Lock, Eye, UserCheck, Clock, Globe, Mail } from "lucide-react";
-import { RGPDBadge } from "@/components/CertificationBadges";
+import { Shield, Globe, Mail, Cookie, Eye } from "lucide-react";
 
 const PrivacyPolicy = () => {
   return (
@@ -18,38 +17,39 @@ const PrivacyPolicy = () => {
             <div className="container mx-auto px-6 text-center">
               <Badge variant="secondary" className="px-4 py-2 text-sm font-medium mb-6">
                 <Shield className="w-4 h-4 inline mr-2" />
-                Protection des Données
+                Transparence
               </Badge>
               <h1 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
                 Politique de Confidentialité
               </h1>
-              <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
-                DiagMind.AI s'engage à protéger vos données personnelles conformément au RGPD et à la réglementation sur les données de santé.
+              <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+                Ce site est un site vitrine de présentation du projet DiagMind.AI. Aucune donnée personnelle n'est collectée ni traitée via ce site.
               </p>
-              <div className="flex justify-center">
-                <RGPDBadge className="w-20 h-20" />
-              </div>
             </div>
           </section>
 
           <div className="container mx-auto px-6 py-12 max-w-4xl">
             <div className="space-y-8">
-              {/* Responsable du traitement */}
+              {/* Nature du site */}
               <Card className="bg-background border-border">
                 <CardHeader>
                   <div className="flex items-center space-x-3">
                     <div className="w-10 h-10 bg-gradient-to-br from-primary-light to-accent-light rounded-lg flex items-center justify-center">
-                      <UserCheck className="h-5 w-5 text-primary" />
+                      <Eye className="h-5 w-5 text-primary" />
                     </div>
-                    <CardTitle className="text-xl">Responsable du Traitement</CardTitle>
+                    <CardTitle className="text-xl">Nature du Site</CardTitle>
                   </div>
                 </CardHeader>
                 <CardContent className="space-y-4 text-muted-foreground">
                   <p>
-                    <strong className="text-foreground">DiagMind.AI SAS</strong> est responsable du traitement de vos données personnelles.
+                    Ce site internet est un <strong className="text-foreground">site vitrine à vocation informative</strong> présentant le projet DiagMind.AI, actuellement en phase de développement.
                   </p>
-                  <p><strong className="text-foreground">Délégué à la Protection des Données (DPO) :</strong> dpo@diagmind.ai</p>
-                  <p><strong className="text-foreground">Adresse :</strong> 15 Rue de l'Innovation, 75013 Paris, France</p>
+                  <p>
+                    <strong className="text-foreground">DiagMind.AI n'est pas encore une société constituée.</strong> Il s'agit d'un projet porté par Matthieu Graziani. Aucun service commercial n'est proposé à ce stade.
+                  </p>
+                  <p>
+                    Ce site ne comporte aucun formulaire de collecte de données, aucun espace membre, aucun système de paiement et aucune fonctionnalité nécessitant la saisie de données personnelles.
+                  </p>
                 </CardContent>
               </Card>
 
@@ -58,161 +58,63 @@ const PrivacyPolicy = () => {
                 <CardHeader>
                   <div className="flex items-center space-x-3">
                     <div className="w-10 h-10 bg-gradient-to-br from-primary-light to-accent-light rounded-lg flex items-center justify-center">
-                      <Database className="h-5 w-5 text-primary" />
+                      <Shield className="h-5 w-5 text-primary" />
                     </div>
-                    <CardTitle className="text-xl">Données Collectées</CardTitle>
+                    <CardTitle className="text-xl">Données Personnelles</CardTitle>
                   </div>
                 </CardHeader>
                 <CardContent className="space-y-4 text-muted-foreground">
-                  <p><strong className="text-foreground">Données d'identification :</strong></p>
+                  <p>
+                    <strong className="text-foreground">Aucune donnée personnelle n'est collectée</strong> via ce site. Vous pouvez le consulter librement sans fournir aucune information vous concernant.
+                  </p>
+                  <p>
+                    En particulier, ce site ne collecte pas :
+                  </p>
                   <ul className="list-disc list-inside ml-4 space-y-1">
-                    <li>Nom, prénom, adresse email professionnelle</li>
-                    <li>Établissement de santé, spécialité médicale</li>
-                    <li>Numéro RPPS (pour les professionnels de santé)</li>
-                  </ul>
-                  
-                  <p><strong className="text-foreground">Données de santé (anonymisées) :</strong></p>
-                  <ul className="list-disc list-inside ml-4 space-y-1">
-                    <li>Images médicales soumises pour analyse</li>
-                    <li>Résultats d'analyse générés par notre IA</li>
-                    <li>Métadonnées techniques des images (format, résolution)</li>
-                  </ul>
-
-                  <p><strong className="text-foreground">Données techniques :</strong></p>
-                  <ul className="list-disc list-inside ml-4 space-y-1">
-                    <li>Adresse IP, type de navigateur</li>
-                    <li>Données de connexion et d'utilisation du service</li>
-                    <li>Cookies techniques et analytiques</li>
+                    <li>De noms, prénoms ou adresses email</li>
+                    <li>De données de santé</li>
+                    <li>De données de paiement</li>
+                    <li>De données de géolocalisation</li>
                   </ul>
                 </CardContent>
               </Card>
 
-              {/* Finalités du traitement */}
+              {/* Cookies */}
               <Card className="bg-background border-border">
                 <CardHeader>
                   <div className="flex items-center space-x-3">
                     <div className="w-10 h-10 bg-gradient-to-br from-primary-light to-accent-light rounded-lg flex items-center justify-center">
-                      <Eye className="h-5 w-5 text-primary" />
+                      <Cookie className="h-5 w-5 text-primary" />
                     </div>
-                    <CardTitle className="text-xl">Finalités du Traitement</CardTitle>
+                    <CardTitle className="text-xl">Cookies</CardTitle>
                   </div>
                 </CardHeader>
                 <CardContent className="space-y-4 text-muted-foreground">
-                  <p>Vos données sont traitées pour les finalités suivantes :</p>
-                  <ul className="space-y-3">
-                    <li className="flex items-start space-x-2">
-                      <span className="text-trust mt-0.5">✓</span>
-                      <span><strong className="text-foreground">Fourniture du service :</strong> Analyse d'images médicales et génération de rapports d'aide au diagnostic</span>
-                    </li>
-                    <li className="flex items-start space-x-2">
-                      <span className="text-trust mt-0.5">✓</span>
-                      <span><strong className="text-foreground">Gestion du compte :</strong> Création et gestion de votre espace utilisateur</span>
-                    </li>
-                    <li className="flex items-start space-x-2">
-                      <span className="text-trust mt-0.5">✓</span>
-                      <span><strong className="text-foreground">Amélioration du service :</strong> Analyse statistique anonymisée pour améliorer nos algorithmes</span>
-                    </li>
-                    <li className="flex items-start space-x-2">
-                      <span className="text-trust mt-0.5">✓</span>
-                      <span><strong className="text-foreground">Obligations légales :</strong> Respect des obligations réglementaires (traçabilité dispositif médical)</span>
-                    </li>
-                  </ul>
+                  <p>
+                    Ce site peut utiliser des <strong className="text-foreground">cookies strictement nécessaires</strong> au fonctionnement technique du site (préférences d'affichage, consentement cookies).
+                  </p>
+                  <p>
+                    Aucun cookie publicitaire, de tracking ou d'analyse comportementale n'est déposé. Vous pouvez gérer vos préférences à tout moment via le lien « Gérer les cookies » en bas de page.
+                  </p>
                 </CardContent>
               </Card>
 
-              {/* Base légale */}
-              <Card className="bg-background border-border">
-                <CardHeader>
-                  <CardTitle className="text-xl">Base Légale du Traitement</CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-4 text-muted-foreground">
-                  <ul className="space-y-3">
-                    <li><strong className="text-foreground">Consentement explicite :</strong> Pour le traitement des données de santé (Article 9.2.a du RGPD)</li>
-                    <li><strong className="text-foreground">Exécution du contrat :</strong> Pour la fourniture de nos services (Article 6.1.b du RGPD)</li>
-                    <li><strong className="text-foreground">Intérêt légitime :</strong> Pour l'amélioration de nos services et la sécurité (Article 6.1.f du RGPD)</li>
-                    <li><strong className="text-foreground">Obligation légale :</strong> Pour la traçabilité des dispositifs médicaux (Article 6.1.c du RGPD)</li>
-                  </ul>
-                </CardContent>
-              </Card>
-
-              {/* Durée de conservation */}
-              <Card className="bg-background border-border">
-                <CardHeader>
-                  <div className="flex items-center space-x-3">
-                    <div className="w-10 h-10 bg-gradient-to-br from-primary-light to-accent-light rounded-lg flex items-center justify-center">
-                      <Clock className="h-5 w-5 text-primary" />
-                    </div>
-                    <CardTitle className="text-xl">Durée de Conservation</CardTitle>
-                  </div>
-                </CardHeader>
-                <CardContent className="space-y-4 text-muted-foreground">
-                  <ul className="space-y-3">
-                    <li><strong className="text-foreground">Données de compte :</strong> Durée de la relation contractuelle + 3 ans</li>
-                    <li><strong className="text-foreground">Images médicales :</strong> 30 jours après analyse (sauf demande de suppression immédiate)</li>
-                    <li><strong className="text-foreground">Résultats d'analyse :</strong> 10 ans (conformément à la réglementation dispositifs médicaux)</li>
-                    <li><strong className="text-foreground">Logs de connexion :</strong> 1 an</li>
-                    <li><strong className="text-foreground">Données anonymisées :</strong> Conservation illimitée pour la recherche et l'amélioration des algorithmes</li>
-                  </ul>
-                </CardContent>
-              </Card>
-
-              {/* Sécurité */}
-              <Card className="bg-background border-border">
-                <CardHeader>
-                  <div className="flex items-center space-x-3">
-                    <div className="w-10 h-10 bg-gradient-to-br from-primary-light to-accent-light rounded-lg flex items-center justify-center">
-                      <Lock className="h-5 w-5 text-primary" />
-                    </div>
-                    <CardTitle className="text-xl">Sécurité des Données</CardTitle>
-                  </div>
-                </CardHeader>
-                <CardContent className="space-y-4 text-muted-foreground">
-                  <p>Nous mettons en œuvre des mesures de sécurité techniques et organisationnelles :</p>
-                  <ul className="space-y-2">
-                    <li className="flex items-start space-x-2">
-                      <span className="text-trust mt-0.5">✓</span>
-                      <span>Chiffrement AES-256 des données au repos et en transit (TLS 1.3)</span>
-                    </li>
-                    <li className="flex items-start space-x-2">
-                      <span className="text-trust mt-0.5">✓</span>
-                      <span>Hébergement HDS (Hébergeur de Données de Santé) certifié en France</span>
-                    </li>
-                    <li className="flex items-start space-x-2">
-                      <span className="text-trust mt-0.5">✓</span>
-                      <span>Authentification multi-facteurs (MFA) obligatoire</span>
-                    </li>
-                    <li className="flex items-start space-x-2">
-                      <span className="text-trust mt-0.5">✓</span>
-                      <span>Audits de sécurité réguliers et tests de pénétration</span>
-                    </li>
-                    <li className="flex items-start space-x-2">
-                      <span className="text-trust mt-0.5">✓</span>
-                      <span>Certification ISO 27001 du système de management de la sécurité</span>
-                    </li>
-                    <li className="flex items-start space-x-2">
-                      <span className="text-trust mt-0.5">✓</span>
-                      <span>Pseudonymisation et anonymisation des données de santé</span>
-                    </li>
-                  </ul>
-                </CardContent>
-              </Card>
-
-              {/* Transferts internationaux */}
+              {/* Liens externes */}
               <Card className="bg-background border-border">
                 <CardHeader>
                   <div className="flex items-center space-x-3">
                     <div className="w-10 h-10 bg-gradient-to-br from-primary-light to-accent-light rounded-lg flex items-center justify-center">
                       <Globe className="h-5 w-5 text-primary" />
                     </div>
-                    <CardTitle className="text-xl">Transferts de Données</CardTitle>
+                    <CardTitle className="text-xl">Liens Externes</CardTitle>
                   </div>
                 </CardHeader>
                 <CardContent className="space-y-4 text-muted-foreground">
                   <p>
-                    <strong className="text-foreground">Hébergement européen :</strong> Toutes vos données sont hébergées exclusivement dans l'Union Européenne (France).
+                    Ce site peut contenir des liens vers des services tiers (ex. Calendly pour la prise de rendez-vous). En cliquant sur ces liens, vous quittez le site DiagMind.AI et êtes soumis à la politique de confidentialité du service tiers concerné.
                   </p>
                   <p>
-                    Nous ne transférons pas vos données en dehors de l'Espace Économique Européen. En cas de nécessité future, tout transfert serait encadré par les garanties appropriées (Clauses Contractuelles Types de la Commission Européenne).
+                    Nous vous invitons à consulter les politiques de confidentialité de ces services avant de les utiliser.
                   </p>
                 </CardContent>
               </Card>
@@ -223,21 +125,11 @@ const PrivacyPolicy = () => {
                   <CardTitle className="text-xl">Vos Droits</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4 text-muted-foreground">
-                  <p>Conformément au RGPD, vous disposez des droits suivants :</p>
-                  <ul className="space-y-3">
-                    <li><strong className="text-foreground">Droit d'accès :</strong> Obtenir une copie de vos données personnelles</li>
-                    <li><strong className="text-foreground">Droit de rectification :</strong> Corriger vos données inexactes ou incomplètes</li>
-                    <li><strong className="text-foreground">Droit à l'effacement :</strong> Demander la suppression de vos données (« droit à l'oubli »)</li>
-                    <li><strong className="text-foreground">Droit à la portabilité :</strong> Recevoir vos données dans un format structuré</li>
-                    <li><strong className="text-foreground">Droit d'opposition :</strong> Vous opposer au traitement de vos données</li>
-                    <li><strong className="text-foreground">Droit à la limitation :</strong> Limiter le traitement de vos données</li>
-                    <li><strong className="text-foreground">Droit de retirer votre consentement :</strong> À tout moment, sans affecter la licéité du traitement antérieur</li>
-                  </ul>
-                  <p className="mt-4">
-                    Pour exercer vos droits, contactez notre DPO à : <strong className="text-foreground">dpo@diagmind.ai</strong>
+                  <p>
+                    Bien qu'aucune donnée personnelle ne soit collectée, conformément au RGPD (Règlement Général sur la Protection des Données), vous disposez d'un droit d'accès, de rectification, de suppression et d'opposition.
                   </p>
                   <p>
-                    Vous pouvez également introduire une réclamation auprès de la <strong className="text-foreground">CNIL</strong> (Commission Nationale de l'Informatique et des Libertés) : www.cnil.fr
+                    Vous pouvez également introduire une réclamation auprès de la <strong className="text-foreground">CNIL</strong> (Commission Nationale de l'Informatique et des Libertés) : <a href="https://www.cnil.fr" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">www.cnil.fr</a>
                   </p>
                 </CardContent>
               </Card>
@@ -254,11 +146,10 @@ const PrivacyPolicy = () => {
                 </CardHeader>
                 <CardContent className="space-y-4 text-muted-foreground">
                   <p>Pour toute question concernant cette politique de confidentialité :</p>
-                  <p><strong className="text-foreground">Email DPO :</strong> dpo@diagmind.ai</p>
-                  <p><strong className="text-foreground">Email général :</strong> contact@diagmind.ai</p>
-                  <p><strong className="text-foreground">Adresse :</strong> DiagMind.AI SAS - 15 Rue de l'Innovation, 75013 Paris, France</p>
+                  <p><strong className="text-foreground">Responsable :</strong> Matthieu Graziani</p>
+                  <p><strong className="text-foreground">Email :</strong> matthieu.graziani007@gmail.com</p>
                   <p className="text-sm italic mt-4">
-                    <strong className="text-foreground">Dernière mise à jour :</strong> Décembre 2024
+                    <strong className="text-foreground">Dernière mise à jour :</strong> Mars 2025
                   </p>
                 </CardContent>
               </Card>

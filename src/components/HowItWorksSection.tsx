@@ -2,7 +2,7 @@ import { motion, useInView, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Monitor, Zap, CheckCircle2, Timer, Activity, Brain, FileText } from "lucide-react";
+import { Monitor, Zap, CheckCircle2, Timer, Activity, Brain, FileText, Calendar } from "lucide-react";
 import pacsInterfaceMockup from "@/assets/pacs-interface-mockup.jpg";
 
 const HowItWorksSection = () => {
@@ -242,6 +242,20 @@ const HowItWorksSection = () => {
               </motion.div>
             );
           })}
+        </motion.div>
+
+        {/* CTA */}
+        <motion.div className="text-center mt-12" variants={itemVariants}>
+          <a
+            href="https://calendly.com/matthieu-graziani007"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-8 py-3 rounded-lg bg-gradient-hero text-primary-foreground font-semibold hover:opacity-90 transition-opacity shadow-hero"
+          >
+            <Calendar className="h-5 w-5" />
+            Voir DiagMind en Action
+          </a>
+          <p className="text-sm text-muted-foreground mt-3">Démonstration gratuite de 30 minutes</p>
         </motion.div>
       </div>
     </motion.section>

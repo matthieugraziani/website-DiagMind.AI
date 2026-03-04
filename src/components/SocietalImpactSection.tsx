@@ -11,7 +11,8 @@ import {
   Building2,
   AlertTriangle,
   CheckCircle2,
-  ArrowRight
+  ArrowRight,
+  Calendar
 } from "lucide-react";
 
 const SocietalImpactSection = () => {
@@ -266,15 +267,23 @@ const SocietalImpactSection = () => {
           </div>
         </motion.div>
 
-        {/* Quote */}
+        {/* CTA */}
         <motion.div 
-          className="mt-12 text-center"
+          className="mt-12 text-center space-y-4"
           variants={headerVariants}
         >
-          <blockquote className="text-lg italic text-muted-foreground max-w-3xl mx-auto">
-            "Notre mission est de garantir que chaque Français, qu'il vive à Paris ou dans un village rural, puisse bénéficier d'un diagnostic de qualité égale. L'IA n'est pas là pour remplacer les radiologues, mais pour leur permettre d'être présents là où on a le plus besoin d'eux."
-          </blockquote>
-          <p className="mt-4 text-sm text-primary font-medium">— Matthieu Graziani, Fondateur de DiagMind.AI</p>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            Vous êtes radiologue ou directeur d'établissement ? Découvrez comment DiagMind.AI peut répondre à vos défis.
+          </p>
+          <a
+            href="https://calendly.com/matthieu-graziani007"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-8 py-3 rounded-lg bg-gradient-hero text-primary-foreground font-semibold hover:opacity-90 transition-opacity shadow-hero"
+          >
+            <Calendar className="h-5 w-5" />
+            Discuter de Votre Projet
+          </a>
         </motion.div>
       </div>
     </motion.section>

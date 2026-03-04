@@ -299,7 +299,7 @@ const TermsOfService = () => {
                   <h4 className="font-semibold text-foreground mb-2">10.1 Résiliation par l'Utilisateur</h4>
                   <p>
                     L'Utilisateur peut résilier son compte à tout moment depuis son espace personnel 
-                    ou par demande écrite à contact@diagmind.ai.
+                    ou par demande écrite à matthieu.graziani007@gmail.com.
                   </p>
                 </div>
                 <div>

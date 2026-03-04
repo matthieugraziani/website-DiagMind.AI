@@ -1,13 +1,11 @@
-import { useNavigate } from 'react-router-dom';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Brain, Zap, Shield, TrendingUp } from "lucide-react";
+import { Calendar, Zap, Shield, TrendingUp } from "lucide-react";
 import heroImage from "@/assets/hero-brain-scan.jpg";
 
 const HeroSection = () => {
-  const navigate = useNavigate();
   const sectionRef = useRef<HTMLElement>(null);
   
   // Parallax effect for the hero image
@@ -113,7 +111,7 @@ const HeroSection = () => {
               </div>
             </motion.div>
 
-            {/* CTA Buttons */}
+            {/* CTA Button */}
             <motion.div 
               variants={itemVariants}
               className="flex flex-col sm:flex-row gap-4"
@@ -121,22 +119,18 @@ const HeroSection = () => {
               <Button 
                 variant="medical" 
                 size="lg" 
-                className="shadow-hero"
-                onClick={() => navigate('/detection-demo')}
+                className="shadow-hero text-lg px-8 py-6"
+                asChild
               >
-                <Brain className="h-5 w-5" />
-                Essayer la Démo
-              </Button>
-              <Button 
-                variant="medical-outline" 
-                size="lg"
-                onClick={() => {
-                  document.getElementById('technologie')?.scrollIntoView({ behavior: 'smooth' });
-                }}
-              >
-                Découvrir la Technologie
+                <a href="https://calendly.com/matthieu-graziani007" target="_blank" rel="noopener noreferrer">
+                  <Calendar className="h-5 w-5" />
+                  Réserver une Démo Gratuite
+                </a>
               </Button>
             </motion.div>
+            <motion.p variants={itemVariants} className="text-sm text-muted-foreground">
+              ✓ 30 min · ✓ Sans engagement · ✓ Présentation personnalisée
+            </motion.p>
 
             {/* Trust Indicators */}
             <motion.div 

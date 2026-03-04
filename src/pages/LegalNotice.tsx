@@ -41,14 +41,13 @@ const LegalNotice = () => {
                   </div>
                 </CardHeader>
                 <CardContent className="space-y-4 text-muted-foreground">
-                  <p><strong className="text-foreground">Raison sociale :</strong> DiagMind.AI SAS</p>
-                  <p><strong className="text-foreground">Forme juridique :</strong> Société par Actions Simplifiée (SAS)</p>
-                  <p><strong className="text-foreground">Capital social :</strong> 50 000 €</p>
-                  <p><strong className="text-foreground">Siège social :</strong> 15 Rue de l'Innovation, 75013 Paris, France</p>
-                  <p><strong className="text-foreground">RCS :</strong> Paris B 123 456 789</p>
-                  <p><strong className="text-foreground">SIRET :</strong> 123 456 789 00012</p>
-                  <p><strong className="text-foreground">Numéro TVA intracommunautaire :</strong> FR12 123456789</p>
-                  <p><strong className="text-foreground">Directeur de la publication :</strong> Dr. Sophie Martin, Présidente</p>
+                  <p>
+                    Ce site est édité par <strong className="text-foreground">Matthieu Graziani</strong>, personne physique, dans le cadre de la présentation du projet DiagMind.AI.
+                  </p>
+                  <p>
+                    <strong className="text-foreground">Statut :</strong> Projet en cours de développement — aucune structure juridique n'est encore constituée à ce jour.
+                  </p>
+                  <p><strong className="text-foreground">Directeur de la publication :</strong> Matthieu Graziani</p>
                 </CardContent>
               </Card>
 
@@ -63,8 +62,7 @@ const LegalNotice = () => {
                   </div>
                 </CardHeader>
                 <CardContent className="space-y-4 text-muted-foreground">
-                  <p><strong className="text-foreground">Email :</strong> contact@diagmind.ai</p>
-                  <p><strong className="text-foreground">Email DPO :</strong> dpo@diagmind.ai</p>
+                  <p><strong className="text-foreground">Email :</strong> matthieu.graziani007@gmail.com</p>
                 </CardContent>
               </Card>
 
@@ -79,11 +77,9 @@ const LegalNotice = () => {
                   </div>
                 </CardHeader>
                 <CardContent className="space-y-4 text-muted-foreground">
-                  <p><strong className="text-foreground">Hébergeur :</strong> OVH Cloud - Hébergeur de Données de Santé (HDS)</p>
-                  <p><strong className="text-foreground">Adresse :</strong> 2 rue Kellermann, 59100 Roubaix, France</p>
-                  <p><strong className="text-foreground">Certification :</strong> HDS (Hébergeur de Données de Santé) - Certificat n°2024-HDS-12345</p>
+                  <p><strong className="text-foreground">Hébergeur :</strong> Lovable (via Supabase / infrastructure cloud)</p>
                   <p className="text-sm">
-                    L'hébergement de nos données de santé est conforme aux exigences de l'article L.1111-8 du Code de la santé publique et au référentiel de certification HDS.
+                    Ce site vitrine est hébergé sur une infrastructure cloud. Aucune donnée personnelle ni donnée de santé n'est stockée ou traitée via ce site.
                   </p>
                 </CardContent>
               </Card>
@@ -100,39 +96,33 @@ const LegalNotice = () => {
                 </CardHeader>
                 <CardContent className="space-y-4 text-muted-foreground">
                   <p>
-                    L'ensemble du contenu de ce site (textes, images, vidéos, logos, icônes, sons, logiciels, etc.) est la propriété exclusive de DiagMind.AI SAS ou de ses partenaires et est protégé par les lois françaises et internationales relatives à la propriété intellectuelle.
+                    L'ensemble du contenu de ce site (textes, images, logos, maquettes, etc.) est la propriété de Matthieu Graziani ou utilisé avec autorisation, et est protégé par les lois françaises et internationales relatives à la propriété intellectuelle.
                   </p>
                   <p>
-                    Toute reproduction, représentation, modification, publication, transmission, ou plus généralement toute exploitation non autorisée du site ou de son contenu, par quelque procédé que ce soit, est interdite et constitue une contrefaçon sanctionnée par les articles L.335-2 et suivants du Code de la propriété intellectuelle.
+                    Toute reproduction ou exploitation non autorisée du contenu de ce site est interdite.
                   </p>
                   <p>
-                    <strong className="text-foreground">Marques déposées :</strong> DiagMind.AI® est une marque déposée auprès de l'INPI sous le numéro 4567890.
+                    <strong className="text-foreground">Note :</strong> La marque DiagMind.AI n'est pas encore déposée. Le nom est utilisé à titre de projet.
                   </p>
                 </CardContent>
               </Card>
 
-              {/* Dispositif médical */}
+              {/* Nature du projet */}
               <Card className="bg-background border-border">
                 <CardHeader>
                   <div className="flex items-center space-x-3">
                     <div className="w-10 h-10 bg-gradient-to-br from-primary-light to-accent-light rounded-lg flex items-center justify-center">
                       <Scale className="h-5 w-5 text-primary" />
                     </div>
-                    <CardTitle className="text-xl">Dispositif Médical</CardTitle>
+                    <CardTitle className="text-xl">Nature du Projet</CardTitle>
                   </div>
                 </CardHeader>
                 <CardContent className="space-y-4 text-muted-foreground">
                   <p>
-                    <strong className="text-foreground">Classification :</strong> Dispositif médical de classe IIa selon le Règlement (UE) 2017/745 relatif aux dispositifs médicaux (MDR).
+                    DiagMind.AI est un <strong className="text-foreground">projet en phase de développement</strong>. Aucun service commercial n'est proposé à ce stade. Les informations présentées sur ce site décrivent la vision et les objectifs du projet.
                   </p>
                   <p>
-                    <strong className="text-foreground">Marquage CE :</strong> CE 0459 - Organisme notifié : BSI (British Standards Institution)
-                  </p>
-                  <p>
-                    <strong className="text-foreground">Usage prévu :</strong> Logiciel d'aide au diagnostic destiné aux professionnels de santé pour l'analyse d'imagerie médicale cérébrale. Ce dispositif ne se substitue pas au jugement clinique du professionnel de santé.
-                  </p>
-                  <p className="text-sm italic">
-                    Attention : Ce logiciel est un outil d'aide à la décision clinique et ne remplace en aucun cas le diagnostic médical effectué par un professionnel de santé qualifié.
+                    Aucun dispositif médical n'est commercialisé ni certifié à ce jour. Les certifications et marquages mentionnés sur le site correspondent à des objectifs visés dans le cadre du développement futur du projet.
                   </p>
                 </CardContent>
               </Card>
@@ -144,13 +134,10 @@ const LegalNotice = () => {
                 </CardHeader>
                 <CardContent className="space-y-4 text-muted-foreground">
                   <p>
-                    DiagMind.AI SAS s'efforce d'assurer l'exactitude et la mise à jour des informations diffusées sur ce site. Toutefois, DiagMind.AI SAS ne peut garantir l'exactitude, la précision ou l'exhaustivité des informations mises à disposition.
+                    Les informations présentées sur ce site sont fournies à titre indicatif et ne constituent ni une offre commerciale, ni un conseil médical, ni une promesse de résultats.
                   </p>
                   <p>
-                    En conséquence, DiagMind.AI SAS décline toute responsabilité pour toute imprécision, inexactitude ou omission portant sur des informations disponibles sur ce site.
-                  </p>
-                  <p>
-                    Les résultats fournis par notre logiciel d'aide au diagnostic sont destinés à assister les professionnels de santé et ne constituent en aucun cas un diagnostic médical définitif.
+                    L'éditeur ne saurait être tenu responsable de l'utilisation ou de l'interprétation des informations contenues sur ce site.
                   </p>
                 </CardContent>
               </Card>
@@ -158,14 +145,14 @@ const LegalNotice = () => {
               {/* Droit applicable */}
               <Card className="bg-background border-border">
                 <CardHeader>
-                  <CardTitle className="text-xl">Droit Applicable et Juridiction</CardTitle>
+                  <CardTitle className="text-xl">Droit Applicable</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4 text-muted-foreground">
                   <p>
-                    Les présentes mentions légales sont régies par le droit français. En cas de litige, et après échec de toute tentative de recherche d'une solution amiable, les tribunaux français seront seuls compétents.
+                    Les présentes mentions légales sont régies par le droit français.
                   </p>
                   <p>
-                    <strong className="text-foreground">Dernière mise à jour :</strong> Décembre 2024
+                    <strong className="text-foreground">Dernière mise à jour :</strong> Mars 2025
                   </p>
                 </CardContent>
               </Card>
