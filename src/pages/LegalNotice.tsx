@@ -152,7 +152,7 @@ const LegalNotice = () => {
                     Les présentes mentions légales sont régies par le droit français.
                   </p>
                   <p>
-                    <strong className="text-foreground">Dernière mise à jour :</strong> Mars 2025
+                    <strong className="text-foreground">Dernière mise à jour :</strong> Mars 2026
                   </p>
                 </CardContent>
               </Card>

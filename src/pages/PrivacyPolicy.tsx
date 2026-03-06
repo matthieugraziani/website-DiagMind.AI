@@ -149,7 +149,7 @@ const PrivacyPolicy = () => {
                   <p><strong className="text-foreground">Responsable :</strong> Matthieu Graziani</p>
                   <p><strong className="text-foreground">Email :</strong> matthieu.graziani007@gmail.com</p>
                   <p className="text-sm italic mt-4">
-                    <strong className="text-foreground">Dernière mise à jour :</strong> Mars 2025
+                    <strong className="text-foreground">Dernière mise à jour :</strong> Mars 2026
                   </p>
                 </CardContent>
               </Card>
