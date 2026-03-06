@@ -69,7 +69,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-background/20 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-background/70 text-sm">
-            © 2024 DiagMind.AI. Tous droits réservés.
+            © 2026 DiagMind.AI. Tous droits réservés.
           </p>
           <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-background/70 mt-4 md:mt-0">
             <a href="/mentions-legales" className="hover:text-background transition-colors">Mentions Légales</a>
