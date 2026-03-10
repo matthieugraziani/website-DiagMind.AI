@@ -147,23 +147,6 @@ const AdvantagesSection = () => {
           })}
         </div>
 
-        {/* Barre de crédibilité */}
-        <motion.div
-          className="mt-16 border border-border rounded-2xl p-8 bg-card"
-          variants={headerVariants}
-        >
-          <h3 className="text-center text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-6">
-            Engagements & Écosystème
-          </h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {trustedBy.map((item, i) => (
-              <div key={i} className="text-center space-y-1">
-                <div className="text-foreground font-semibold text-sm">{item.label}</div>
-                <div className="text-muted-foreground text-xs">{item.detail}</div>
-              </div>
-            ))}
-          </div>
-        </motion.div>
 
         {/* CTA SEO */}
         <motion.div
