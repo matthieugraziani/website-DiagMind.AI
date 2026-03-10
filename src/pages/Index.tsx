@@ -3,7 +3,7 @@ import HeroSection from "@/components/HeroSection";
 import HowItWorksSection from "@/components/HowItWorksSection";
 import AdvantagesSection from "@/components/AdvantagesSection";
 import SocietalImpactSection from "@/components/SocietalImpactSection";
-import RoadmapSection from "@/components/RoadmapSection";
+
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import Watermark from "@/components/Watermark";
