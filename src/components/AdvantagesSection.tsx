@@ -37,9 +37,9 @@ const AdvantagesSection = () => {
     {
       icon: Shield,
       title: "Conformité Réglementaire",
-      description: "Démarche de conformité RGPD, hébergement HDS en cours, et processus de marquage CE dispositif médical engagé.",
+      description: "Démarche de conformité RGPD, hébergement HDS en projet, et processus de marquage CE dispositif médical en projet.",
       stat: "RGPD",
-      statLabel: "en conformité",
+      statLabel: "en projet",
       color: "text-trust"
     },
     {
