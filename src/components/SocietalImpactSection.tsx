@@ -25,6 +25,7 @@ const SocietalImpactSection = () => {
       title: "Population Vieillissante",
       stat: "+40%",
       description: "d'examens d'imagerie prévus d'ici 2035 due au vieillissement démographique",
+      source: "Source : DREES, projections 2023",
       color: "from-orange-500 to-red-500"
     },
     {
@@ -32,6 +33,7 @@ const SocietalImpactSection = () => {
       title: "Déserts Médicaux",
       stat: "30%",
       description: "des Français vivent dans une zone sous-dotée en radiologues",
+      source: "Source : DREES, Atlas de la démographie médicale 2023",
       color: "from-red-500 to-pink-500"
     },
     {
@@ -39,6 +41,7 @@ const SocietalImpactSection = () => {
       title: "Pénurie de Spécialistes",
       stat: "-25%",
       description: "de radiologues en France d'ici 2030 selon les projections",
+      source: "Source : Conseil National de l'Ordre des Médecins (CNOM), 2022",
       color: "from-amber-500 to-orange-500"
     }
   ];
@@ -188,6 +191,7 @@ const SocietalImpactSection = () => {
                           <div className="text-3xl font-bold text-foreground mb-1">{challenge.stat}</div>
                           <h4 className="font-semibold text-foreground mb-2">{challenge.title}</h4>
                           <p className="text-sm text-muted-foreground">{challenge.description}</p>
+                          <p className="text-xs text-muted-foreground/70 italic mt-2">{challenge.source}</p>
                         </div>
                       </div>
                     </CardContent>
