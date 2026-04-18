@@ -191,6 +191,7 @@ const SocietalImpactSection = () => {
                           <div className="text-3xl font-bold text-foreground mb-1">{challenge.stat}</div>
                           <h4 className="font-semibold text-foreground mb-2">{challenge.title}</h4>
                           <p className="text-sm text-muted-foreground">{challenge.description}</p>
+                          <p className="text-xs text-muted-foreground/70 italic mt-2">{challenge.source}</p>
                         </div>
                       </div>
                     </CardContent>
