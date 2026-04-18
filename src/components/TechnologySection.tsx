@@ -30,7 +30,7 @@ const TechnologySection = () => {
     {
       icon: Database,
       title: "Big Data Médical",
-      description: "Entraînement sur des millions d'images médicales annotées par des experts",
+      description: "Entraînement sur les données de 1 250 patients annotées par des experts",
       technologies: ["Cloud Computing", "Data Pipeline", "MLOps"]
     },
     {
