@@ -32,6 +32,7 @@ const App = () => (
             <Route path="/politique-confidentialite" element={<PrivacyPolicy />} />
             <Route path="/conditions-utilisation" element={<TermsOfService />} />
             <Route path="/carrieres" element={<Careers />} />
+<Route path="/neuro-irm-viewer" element={<PacsViewer />} />
             <Route path="/nero-irm-viewer" element={<PacsViewer />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />

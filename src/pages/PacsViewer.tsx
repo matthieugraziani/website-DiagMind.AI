@@ -22,7 +22,7 @@ const PacsViewer = () => {
       </div>
       <iframe
         src="/pacs/index.html"
-        title="Nero-IRM-viewer"
+        title="Neuro-IRM-viewer"
         className="w-full flex-1 border-0"
         allow="fullscreen"
       />

@@ -36,8 +36,8 @@ const Header = () => {
             <a href="/#contact" className="text-foreground hover:text-primary transition-colors">
               Contact
             </a>
-            <a href="/nero-irm-viewer" className="text-foreground hover:text-primary transition-colors font-semibold">
-              Nero-IRM-viewer
+<a href="/neuro-irm-viewer" className="text-foreground hover:text-primary transition-colors font-semibold">
+              Neuro-IRM-viewer
             </a>
           </nav>
 
@@ -73,8 +73,8 @@ const Header = () => {
               <a href="/#contact" className="text-foreground hover:text-primary transition-colors">
                 Contact
               </a>
-              <a href="/nero-irm-viewer" className="text-foreground hover:text-primary transition-colors font-semibold">
-                Nero-IRM-viewer
+<a href="/neuro-irm-viewer" className="text-foreground hover:text-primary transition-colors font-semibold">
+                Neuro-IRM-viewer
               </a>
               <div className="flex flex-col space-y-2 pt-4">
                 <Button variant="medical" size="sm" asChild>
