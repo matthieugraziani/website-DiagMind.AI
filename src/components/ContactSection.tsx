@@ -86,11 +86,11 @@ const ContactSection = () => {
           <motion.div variants={itemVariants} className="flex justify-center gap-8 pt-4">
             <div className="flex items-center gap-2 text-primary-foreground/70 text-sm">
               <Shield className="h-4 w-4" />
-              <span>RGPD Conforme</span>
+              <span>Mise en conformité RGPD</span>
             </div>
             <div className="flex items-center gap-2 text-primary-foreground/70 text-sm">
               <Award className="h-4 w-4" />
-              <span>Marquage CE en cours</span>
+              <span>Marquage CE en projet</span>
             </div>
           </motion.div>
         </div>
