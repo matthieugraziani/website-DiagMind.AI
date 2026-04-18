@@ -52,14 +52,16 @@ const SocietalImpactSection = () => {
       before: "18 min",
       after: "3 min",
       label: "Temps par cliché",
-      description: "Libérez du temps pour les cas complexes"
+      description: "Libérez du temps pour les cas complexes",
+      source: "Source : SFR (Société Française de Radiologie), 2022"
     },
     {
       icon: TrendingUp,
       before: "50",
       after: "300",
       label: "Clichés analysés/jour",
-      description: "Multipliez votre capacité de diagnostique"
+      description: "Multipliez votre capacité de diagnostique",
+      source: "Source : DREES, Études sur l'activité radiologique 2023"
     },
     {
       icon: Building2,
@@ -233,6 +235,9 @@ const SocietalImpactSection = () => {
                         </div>
                       </div>
                       <p className="text-sm text-muted-foreground text-center">{solution.description}</p>
+                      {solution.source && (
+                        <p className="text-xs text-muted-foreground/70 italic text-center mt-2">{solution.source}</p>
+                      )}
                     </CardContent>
                   </Card>
                 </motion.div>
