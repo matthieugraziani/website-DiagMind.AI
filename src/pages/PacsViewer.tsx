@@ -11,17 +11,19 @@ const PacsViewer = () => {
   }, []);
 
   return (
-    <div className="relative w-full h-screen">
-      <a href="/" className="absolute top-4 left-4 z-50">
-        <Button variant="outline" size="sm" className="bg-background/80 backdrop-blur-sm border-border shadow-md">
-          <ArrowLeft className="h-4 w-4 mr-2" />
-          Retour au site
-        </Button>
-      </a>
+    <div className="flex flex-col w-full h-screen bg-background">
+      <div className="p-3 border-b border-border bg-background">
+        <a href="/">
+          <Button variant="outline" size="sm">
+            <ArrowLeft className="h-4 w-4 mr-2" />
+            Retour au site
+          </Button>
+        </a>
+      </div>
       <iframe
         src="/pacs/index.html"
         title="Nero-IRM-viewer"
-        className="w-full h-full border-0"
+        className="w-full flex-1 border-0"
         allow="fullscreen"
       />
     </div>
