@@ -13,9 +13,9 @@ const AdvantagesSection = () => {
     {
       icon: Brain,
       title: "Technologie Deep Learning",
-      description: "Réseaux de neurones convolutifs (CNN) entraînés sur plus de 100 000 images médicales annotées par des radiologues certifiés.",
-      stat: "100K+",
-      statLabel: "images d'entraînement",
+      description: "Réseaux de neurones convolutifs (CNN) entraînés sur les données de 1250 patients annotées par des radiologues certifiés.",
+      stat: "1250",
+      statLabel: "patients",
       color: "text-primary"
     },
     {
