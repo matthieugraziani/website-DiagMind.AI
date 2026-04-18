@@ -2726,7 +2726,7 @@ function validateReport() {
   const dateStr = `${now.getDate().toString().padStart(2,'0')}/${(now.getMonth()+1).toString().padStart(2,'0')}/${now.getFullYear()} à ${now.getHours().toString().padStart(2,'0')}:${now.getMinutes().toString().padStart(2,'0')}`;
   const sig = document.getElementById('reportSignature');
   sig.style.display = 'block';
-  sig.innerHTML = `✓ Validé par Dr. Graziani — ${dateStr}<br>Rapport enregistré · Visionneuse PACS`;
+  sig.innerHTML = `✓ Validé par Dr. Graziani — ${dateStr}<br>Rapport enregistré · Neuro-IRM-viewer`;
   const reportMeta = document.getElementById('reportMeta');
   if (reportMeta) reportMeta.textContent = `Validé · ${dateStr} · Dr. Graziani`;
 }
